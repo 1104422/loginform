@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="CSS/SignInStyle.css">
+</head>
+<body>
+    <form  action="#" th:action="@{/processlogin}" method="post" th:object="${user}">
+        <div class="container">
+            <h1>Sign In</h1>
+              <p> <input th:field ="*{email}" type="email" name="email"  placeholder="Email address" required></p>
+              <p> <input th:field ="*{password}" type="password" name="password" placeholder="Password" required></p>
+             <input class="submit" type="submit" value="SIGN IN">
+              <p>Don't have an account?<a class="createAccount" href="signUp" target="blank">Create One</a></p>
+        
+          </div>
+          <a href="userlist">User List</a>
+    </form>
+</body>
+</html>

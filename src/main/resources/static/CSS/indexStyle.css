@@ -1,0 +1,16 @@
+body{
+    box-sizing: border-box;
+    
+}
+h1{
+    text-align: center;
+    color: green;    
+}
+h4,:visited{
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+h4 :hover{
+    color: orangered;
+}
